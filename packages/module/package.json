@@ -1,0 +1,40 @@
+{
+  "name": "@chess/elo",
+  "version": "0.0.1",
+  "description": "Chess Elo",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "chess",
+    "elo"
+  ],
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "packageManager": "pnpm@10.29.2",
+  "scripts": {
+    "format": "prettier --cache --write .",
+    "lint": "eslint .",
+    "build": "tsc -p tsconfig.build.json",
+    "pretest": "jest --clearCache",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/jest": "30.0.0",
+    "@types/node": "25.2.3",
+    "eslint": "10.0.0",
+    "globals": "17.3.0",
+    "jest": "30.2.0",
+    "prettier": "3.8.1",
+    "ts-jest": "29.4.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.55.0"
+  }
+}

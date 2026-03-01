@@ -17,6 +17,6 @@
 			"@elo/*": ["./src/*"]
 		}
 	},
-	"include": ["packages/app/next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mts"],
 	"exclude": ["node_modules"]
 }

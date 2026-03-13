@@ -1,7 +1,7 @@
 import {
 	LandingContent,
 	LandingTemplate,
-} from '@elo/templates/LandingTemplate';
+} from '@chess.elo/templates/LandingTemplate';
 import { NextPage } from 'next';
 
 const content: LandingContent = {

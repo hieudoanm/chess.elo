@@ -1,5 +1,5 @@
 import { GetStaticProps, NextPage } from 'next';
-import { VersionTemplate } from '@elo/templates/VersionTemplate';
+import { VersionTemplate } from '@chess.elo/templates/VersionTemplate';
 
 type Props = {
 	version: string;

@@ -1,4 +1,4 @@
-import { ErrorTemplate } from '@elo/templates/ErrorTemplate';
+import { ErrorTemplate } from '@chess.elo/templates/ErrorTemplate';
 import { NextPage } from 'next';
 
 const messages = [

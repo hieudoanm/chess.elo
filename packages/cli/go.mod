@@ -1,6 +1,6 @@
 module chess-elo-cli
 
-go 1.21.0
+go 1.26.1
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect

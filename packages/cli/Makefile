@@ -4,6 +4,10 @@ BIN_DIR := bin
 BIN_NAME := elo
 SRC := ./main.go
 
+VERSION := $(shell date +%Y.%m.%d.%H.%M.%S)
+LDFLAGS := -ldflags="-X 'github.com/hieudoanm/chess.elo/src/cmd.Version=$(VERSION)'"
+
+
 ## Commands
 lint:
 	go vet ./...
@@ -14,7 +18,7 @@ format:
 ## Build binary into ./bin
 build: format lint
 	@mkdir -p $(BIN_DIR)
-	go build -o $(BIN_DIR)/$(BIN_NAME) $(SRC)
+	go build $(LDFLAGS) -o $(BIN_DIR)/$(BIN_NAME) $(SRC)
 	@echo "Binary built at $(BIN_DIR)/$(BIN_NAME)"
 	@ls -lh $(BIN_DIR)/$(BIN_NAME) | awk '{print "Size:", $$5}'
 

@@ -11,9 +11,7 @@
 ## 📦 Installation
 
 ```bash
-curl -fsSL https://github.com/hieudoanm/chess.elo/raw/refs/heads/master/packages/cli/bin/elo -o elo
-chmod +x elo
-sudo mv elo /usr/local/bin/
+curl -fsSL https://raw.githubusercontent.com/hieudoanm/chess.elo/master/packages/cli/scripts/install.sh | bash
 ```
 
 ## 🚀 Usage

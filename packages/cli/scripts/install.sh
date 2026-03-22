@@ -3,8 +3,8 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-BIN_NAME="elo"
-REPO_URL="https://github.com/hieudoanm/chess.elo/raw/refs/heads/master/packages/cli/bin/elo"
+BIN_NAME="chess-elo"
+REPO_URL="https://github.com/hieudoanm/chess.elo/raw/refs/heads/master/packages/cli/bin/chess-elo"
 INSTALL_DIR="/usr/local/bin"
 
 echo "Downloading $BIN_NAME..."

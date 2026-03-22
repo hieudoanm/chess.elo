@@ -17,13 +17,10 @@ import (
 // eloCmd represents the interactive Elo calculator
 var eloCmd = &cobra.Command{
 	Use:   "elo",
-	Short: "Calculate new Elo rating interactively",
-	Long: `Interactive Elo calculator.
-You will be prompted to enter:
-  - Your current rating
-  - Opponent's rating
-  - Game result (1 = win, 0.5 = draw, 0 = loss)
-Optional: K-factor (default 20).`,
+	Short: "Run the elo operation for the chess.elo app",
+	Long:  `The elo command is a specific utility to execute operations related to elo within the chess.elo application.
+
+As a component of the chess tools, this command empowers you to interact directly with chess.elo's elo features via the CLI.`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		reader := bufio.NewReader(os.Stdin)
 

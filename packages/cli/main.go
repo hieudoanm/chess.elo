@@ -3,7 +3,7 @@ Copyright © 2026 NAME HERE <EMAIL ADDRESS>
 */
 package main
 
-import "chess-elo-cli/cmd"
+import "github.com/hieudoanm/chess.elo/src/cmd"
 
 func main() {
 	cmd.Execute()

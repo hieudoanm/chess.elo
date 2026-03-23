@@ -1,7 +1,7 @@
 .PHONY: lint format build install all
 
 BIN_DIR := bin
-BIN_NAME := chess-elo
+BIN_NAME := chess.elo
 SRC := ./main.go
 
 VERSION := $(shell date +%Y.%m.%d.%H.%M.%S)
@@ -19,8 +19,6 @@ format:
 build: format lint
 	@mkdir -p $(BIN_DIR)
 	go build $(LDFLAGS) -o $(BIN_DIR)/$(BIN_NAME) $(SRC)
-	@echo "Binary built at $(BIN_DIR)/$(BIN_NAME)"
-	@ls -lh $(BIN_DIR)/$(BIN_NAME) | awk '{print "Size:", $$5}'
 
 ## Install binary into ~/bin
 install: build

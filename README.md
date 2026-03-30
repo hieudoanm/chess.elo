@@ -39,6 +39,9 @@ Chess Elo is a focused project in this monorepo that delivers a practical tool w
 - 💻 [CLI](https://github.com/hieudoanm/chess.elo/releases)
 - 📱 [Mobile](https://github.com/hieudoanm/chess.elo/releases)
 - 🖥️ [Desktop](https://github.com/hieudoanm/chess.elo/releases)
+  - 🍎 [MacOS](https://github.com/hieudoanm/chess.elo/releases/tag/macos-latest)
+  - 🐧 [Ubuntu](https://github.com/hieudoanm/chess.elo/releases/tag/ubuntu-latest)
+  - 🪟 [Windows](https://github.com/hieudoanm/chess.elo/releases/tag/windows-latest)
 
 ## 🛠️ 5. Development Stack
 

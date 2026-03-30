@@ -27,11 +27,11 @@ jobs:
           cache-dependency-path: packages/cli/go.sum
       - name: Install Dependencies
         run: go mod download
-      - name: Linting
+      - name: Linting CLI
         run: go vet ./...
-      - name: Test
+      - name: Test CLI
         run: go test ./...
-      - name: Build Production
+      - name: Build CLI
         run: go build ./...
       - name: Delete old platform release
         if: github.ref == 'refs/heads/master'

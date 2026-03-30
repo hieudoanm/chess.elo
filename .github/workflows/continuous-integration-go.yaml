@@ -33,3 +33,23 @@ jobs:
         run: go test ./...
       - name: Build Production
         run: go build ./...
+      - name: Delete old platform release
+        if: github.ref == 'refs/heads/master'
+        uses: dev-drprasad/delete-tag-and-release@v1.1
+        with:
+          tag_name: "cli-latest"
+          delete_release: true
+          github_token: ${{ secrets.GH_TOKEN }}
+        continue-on-error: true
+      - name: Create / Update platform release
+        if: github.ref == 'refs/heads/master'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: "cli-latest"
+          name: Latest CLI Release
+          body: "Automated Build for CLI latest commit on master."
+          prerelease: true
+          files: |
+            packages/cli/bin/chess-elo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

@@ -1,5 +1,5 @@
 [package]
-name = "chess.elo"
+name = "chess-elo"
 version = "0.0.1"
 description = "Chess Elo"
 authors = ["hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)"]

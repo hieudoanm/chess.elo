@@ -11,9 +11,9 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "github.com/hieudoanm/chess.elo",
+	Use:   "chess-elo",
 	Short: "Chess.elo CLI application (chess tools)",
-	Long:  `The chess.elo CLI application is a comprehensive backend utility belonging to the chess suite of tools.
+	Long: `The chess.elo CLI application is a comprehensive backend utility belonging to the chess suite of tools.
 
 Use this root executable to manage configuring, running, and interacting with all chess.elo-related operations securely and efficiently from your terminal.`,
 	// Uncomment the following line if your bare application
